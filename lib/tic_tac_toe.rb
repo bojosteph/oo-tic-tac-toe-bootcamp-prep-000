@@ -114,28 +114,14 @@ def winner
 end
 
   
-def play
-
-  
-  while over? != true && draw? != true
-    turn
-  end
-  
+ def play
+    while !over?
+      turn
+    end
     if won?
-      puts "Congratulations #{winner}!" 
+      puts "Congratulations #{winner}!"
     elsif draw?
       puts "Cat's Game!"
     end
   end
-
-  unless  over?
-  
-    turn
-  end
-  if won?
-    puts "Congratulations #{winner}!"
-  elsif draw?
-    puts "Cat's Game!"
-  end
-end
 

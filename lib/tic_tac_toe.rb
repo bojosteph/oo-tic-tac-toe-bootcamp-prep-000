@@ -115,7 +115,7 @@ end
 
   
  def play
-    while !over? && draw? != authenticate_or_request_with_http_basic
+    while !over? && draw? != true
       turn
     end
     if won?

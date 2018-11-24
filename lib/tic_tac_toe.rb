@@ -117,7 +117,7 @@ end
 def play
 
   
-  while (over?) != true && draw? != true)
+  while (over? != true && draw? != true)
     turn
   end
   

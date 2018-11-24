@@ -113,29 +113,4 @@ def winner
   end
 end
 
-  
-def play
-
-  
-  while over? != true && draw? != true
-    turn
-  end
-  
-    if won?
-      puts "Congratulations #{winner}!" 
-    elsif draw?
-      puts "Cat's Game!"
-    end
-  end
-
-  unless  over?
-  
-    turn
-  end
-  if won?
-    puts "Congratulations #{winner}!"
-  elsif draw?
-    puts "Cat's Game!"
-  end
-end
-
+authenticate_or_request_with_http_basic
